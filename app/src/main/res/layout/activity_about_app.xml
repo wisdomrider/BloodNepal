@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!-- CREATED BY WISDOMRIDER -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wisdomrider.bloodnepal.Utils.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="@font/charcoal"
+        android:text="About App" />
+
+    <com.wisdomrider.bloodnepal.Utils.ScrollingTextView
+        android:layout_width="match_parent"
+        android:fontFamily="@font/font"
+        android:layout_marginTop="10dp"
+        android:id="@+id/about"
+        android:layout_marginBottom="10dp"
+        android:textSize="21dp"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"></com.wisdomrider.bloodnepal.Utils.ScrollingTextView>
+</RelativeLayout>

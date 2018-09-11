@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Blood Menu">
+    <menu>
+        <item
+            android:id="@+id/find_peoples"
+            android:icon="@drawable/peoples"
+            android:title="Blood Database" />
+        <item
+            android:icon="@drawable/blood"
+            android:id="@+id/request_blood"
+            android:title="Request For Blood" />
+    </menu>
+    </item>
+    <item android:title="App Menu">
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/about"
+                android:title="About App" />
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share App" />
+
+        </menu>
+    </item>
+
+</menu>

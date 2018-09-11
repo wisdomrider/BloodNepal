@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?><!-- CREATED BY WISDOMRIDER -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.wisdomrider.bloodnepal.Utils.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="@font/charcoal"
+        android:text="Request for blood" />
+
+    <ScrollView
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/required"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:text=""
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/blood_for"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/border"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:hint="Receiver name"
+                android:imeOptions="actionNext"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColorHint="@color/red_primary_dark"
+                android:textSize="19dp" />
+
+            <Spinner
+                android:id="@+id/blood_grp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/age_group"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/zone"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:textAlignment="center" />
+
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/border"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:hint="Description or something."
+                android:imeOptions="actionNext"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/border"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:hint="Phonenumber"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:textColorHint="@color/red_primary_dark"
+                android:textSize="19dp" />
+
+            <EditText
+                android:id="@+id/hospital_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/border"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:hint="City name with hospital "
+                android:padding="10dp"
+                android:textColorHint="@color/red_primary_dark"
+                android:textSize="19dp" />
+
+            <EditText
+                android:id="@+id/messanger_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/border"
+                android:fontFamily="@font/font"
+                android:gravity="center"
+                android:hint="FB username (Long click for information)"
+                android:padding="10dp"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/charcoal"
+                android:onClick="submit"
+                android:text="Submit"
+                android:textSize="19dp" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="Note : Urgent Requests are removed after 5 hours :) "
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

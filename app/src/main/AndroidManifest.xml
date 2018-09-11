@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wisdomrider.bloodnepal">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- donatebloodsavelife4@gmail.com -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/blood_logo"
+        android:label="Blood Nepal"
+        android:roundIcon="@drawable/blood_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".Services.Background" />
+
+        <activity
+            android:name=".Activities.Dash"
+            android:label="@string/title_activity_dash"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Activities.FindPeoples" />
+        <activity android:name=".Activities.RequestBlood" />
+        <activity android:name=".Activities.AboutApp" />
+        <receiver android:name=".Receivers.WifiReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.PACKAGE_INSTALL" />
+                <action android:name="android.intent.action.USER_UNLOCKED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

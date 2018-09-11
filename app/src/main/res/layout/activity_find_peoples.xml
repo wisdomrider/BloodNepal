@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><!-- CREATED BY WISDOMRIDER -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wisdomrider.bloodnepal.Utils.Title
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="@font/charcoal"
+        android:text="Blood database" />
+
+    <RelativeLayout
+        android:background="@color/Gainsboro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:textAlignment="center"
+            android:id="@+id/blood"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/choose" />
+
+        <Button
+            android:id="@+id/choose"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/charcoal"
+            android:onClick="choose"
+            android:text="Load"
+            android:textSize="19dp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/notfound"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/not_pic"
+            android:src="@drawable/message"
+            android:layout_width="50dp"
+            android:layout_height="51dp" />
+        <TextView
+            android:layout_marginTop="2dp"
+            android:textSize="19dp"
+            android:text="sorry No people found"
+            android:padding="4dp"
+            android:fontFamily="@font/charcoal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/peoples_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp" />
+</LinearLayout>
